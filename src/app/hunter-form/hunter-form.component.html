@@ -10,7 +10,7 @@
       <input #long>
       <p>test data: -73.96145 </p>
    </div>
-   <button (click)="getAddress(lat.value, long.value)">Get Address</button>
+   <button (click)="getAddress(lat.value, long.value); lat.value=''; long.value=''">Get Address</button>
 </form>
 <br>
 <h3>Get latitude and longitude coordinates by typing in an address .</h3>
@@ -42,7 +42,7 @@
       <input #country>
       <p>test data: usa </p>
    </div>
-   <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value)">Get Address</button>
+   <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value); number.value=''; street.value=''; city.value=''; state.value=''; zip.value=''; country.value=''">Get Address</button>
 </form>
 
 <div *ngIf="address">
