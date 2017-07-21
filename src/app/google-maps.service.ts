@@ -17,7 +17,7 @@ export class GoogleMapsService {
   // }
 
   getByAddress(number: string, street: string, city: string, state: string, zip: string, country: string) {
-    return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?address=" +number+ +street+ "," +city+ "," +state+ +zip+ "," +country+ "&key="+geoKey)
+    return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?address=" + number + street + "," + city + "," + state + zip+ "," + country + "&key="+geoKey)
   }
 
 }
