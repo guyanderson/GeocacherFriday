@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
 import { HunterFormComponent } from './hunter-form/hunter-form.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    HunterFormComponent
+    HunterFormComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
