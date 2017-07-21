@@ -1,3 +1,13 @@
 <h3>Return location</h3>
 
- <p> {{childLocation}}</p>
+ <!-- <p> {{childLocation}}</p> -->
+
+ <div *ngIf="address">
+   <p> {{childLocation}}</p>
+ </div>
+
+ <div *ngIf="coordinates">
+   <p> {{childLocation.lat}}</p>
+   <br>
+   <p> {{childLocation.lng}}</p>
+ </div>

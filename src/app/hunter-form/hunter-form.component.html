@@ -45,6 +45,12 @@
    <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value)">Get Address</button>
 </form>
 
-<div *ngIf="location">
-  <app-location [childLocation]="location"></app-location>
+<div *ngIf="address">
+  <p> {{address}}</p>
+</div>
+
+<div *ngIf="coordinates">
+  <p> {{coordinates.lat}}</p>
+  <br>
+  <p> {{coordinates.lng}}</p>
 </div>
