@@ -20,9 +20,13 @@ export class HunterFormComponent {
          this.location = response.json().results[0].formatted_address;
          console.log(this.location);
       });
-
    }
 
-
+   getCoordinates(number: string, street: string, city: string, state: string, zip: string, country: string) {
+      this.googleService.getByAddress(number, street, city, state, zip, country).subscribe(response => {
+         this.location = response.json().results[0].geometry.location.lat;
+         console.log(this.location);
+      });
+   }
 
 }

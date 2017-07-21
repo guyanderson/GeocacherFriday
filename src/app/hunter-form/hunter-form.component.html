@@ -1,6 +1,4 @@
-<p>
-  hunter-form works!
-</p>
+<h3>Get an address by typing in latitude and longitude coordinates.</h3>
 
 <form>
    <div class="form-group">
@@ -8,14 +6,45 @@
       <input #lat>
       <p>test data: 40.714224 </p>
       <br>
-      <br>
       <label>Longitude:</label>
       <input #long>
       <p>test data: -73.96145 </p>
    </div>
-   <button (click)="getAddress(lat.value, long.value)">Get Coordinates</button>
+   <button (click)="getAddress(lat.value, long.value)">Get Address</button>
+</form>
+<br>
+<h3>Get latitude and longitude coordinates by typing in an address .</h3>
+
+
+<form>
+   <div class="form-group">
+      <label>Street Number:</label>
+      <input #number>
+      <p>test data: 277 </p>
+      <br>
+      <label>Street Name:</label>
+      <input #street>
+      <p>test data: Bedford Avenue</p>
+      <br>
+      <label>City:</label>
+      <input #city>
+      <p>Brooklyn</p>
+      <br>
+      <label>State:</label>
+      <input #state>
+      <p>test data: ny </p>
+      <br>
+      <label>Zip Code:</label>
+      <input #zip>
+      <p>test data: 11211 </p>
+      <br>
+      <label>Country:</label>
+      <input #country>
+      <p>test data: usa </p>
+   </div>
+   <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value)">Get Address</button>
 </form>
 
-
-
+<div *ngIf="location">
   <app-location [childLocation]="location"></app-location>
+</div>
