@@ -4,8 +4,16 @@
 
 <form>
    <div class="form-group">
+      <label>Latitude:</label>
+      <input #lat>
+      <p>test data: 40.714224 </p>
+      <br>
+      <br>
+      <label>Longitude:</label>
+      <input #long>
+      <p>test data: -73.96145 </p>
    </div>
-   <button (click)="getAddress('40.714224', '73.961452')">Get Coordinates</button>
+   <button (click)="getAddress(lat.value, long.value)">Get Coordinates</button>
 </form>
 
 

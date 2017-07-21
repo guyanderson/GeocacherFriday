@@ -11,7 +11,7 @@ import { GoogleMapsService } from '../google-maps.service';
 
 export class HunterFormComponent {
 
-   location: any[] = null
+   location: any[] = null;
 
    constructor(private googleService: GoogleMapsService) { }
 
