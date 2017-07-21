@@ -4,53 +4,47 @@
    <div class="form-group">
       <label>Latitude:</label>
       <input #lat>
-      <p>test data: 40.714224 </p>
+      <p>e.g. 40.714224 </p>
       <br>
       <label>Longitude:</label>
       <input #long>
-      <p>test data: -73.96145 </p>
+      <p>e.g. -73.96145 </p>
    </div>
    <button (click)="getAddress(lat.value, long.value); lat.value=''; long.value=''">Get Address</button>
 </form>
 <br>
 <h3>Get latitude and longitude coordinates by typing in an address .</h3>
 
+<div *ngIf="address">
+   <p> {{address}}</p>
+</div>
 
 <form>
    <div class="form-group">
       <label>Street Number:</label>
       <input #number>
-      <p>test data: 277 </p>
-      <br>
+      <p>e.g. 277 </p>
       <label>Street Name:</label>
       <input #street>
-      <p>test data: Bedford Avenue</p>
-      <br>
+      <p>e.g. Bedford Avenue</p>
       <label>City:</label>
       <input #city>
-      <p>Brooklyn</p>
-      <br>
+      <p>e.g. Brooklyn</p>
       <label>State:</label>
       <input #state>
-      <p>test data: ny </p>
-      <br>
+      <p>e.g. ny </p>
       <label>Zip Code:</label>
       <input #zip>
-      <p>test data: 11211 </p>
-      <br>
+      <p>e.g. 11211 </p>
       <label>Country:</label>
       <input #country>
-      <p>test data: usa </p>
+      <p>e.g. usa </p>
    </div>
-   <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value); number.value=''; street.value=''; city.value=''; state.value=''; zip.value=''; country.value=''">Get Address</button>
+   <button (click)="getCoordinates(number.value, street.value, city.value, state.value, zip.value, country.value); number.value=''; street.value=''; city.value=''; state.value=''; zip.value=''; country.value=''">Get Coordinates</button>
 </form>
 
-<div *ngIf="address">
-  <p> {{address}}</p>
-</div>
-
 <div *ngIf="coordinates">
-  <p> {{coordinates.lat}}</p>
-  <br>
-  <p> {{coordinates.lng}}</p>
+   <p> {{coordinates.lat}}</p>
+   <br>
+   <p> {{coordinates.lng}}</p>
 </div>

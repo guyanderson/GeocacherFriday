@@ -19,6 +19,6 @@ const appRoutes: Routes = [
       component: HunterFormComponent
    }
 
- ];
+];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
