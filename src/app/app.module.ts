@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
+import { HunterFormComponent } from './hunter-form/hunter-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    HunterFormComponent
   ],
   imports: [
     BrowserModule,
