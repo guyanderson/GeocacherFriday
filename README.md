@@ -38,6 +38,16 @@ App will take user input of latitude and longitude coordinates and return an add
 * _go to https://developers.google.com/maps/documentation/geocoding/start#get-a-key and follow their instructions for getting an API key_
 * _create a new file called api-keys.ts in the src/app directory. Follow the example code below._
 * _export var geoKey = "your API key here"_
+* _go to https://firebase.google.com/ and follow their insructions for getting an API key_
+* _create a new file called api-keys.ts in the src/app directory. Copy the code from Firebase into it. Follow the example code below._
+
+* _export var masterFirebaseConfig = {_
+* _apiKey: "xxxx",_
+* _authDomain: "xxxx.firebaseapp.com",_
+* _databaseURL: "https://xxxx.firebaseio.com",_
+* _storageBucket: "xxxx.appspot.com",_
+* _ messagingSenderId: "xxxx"_
+* _};_
 * _$ ng serve_
 * _open localhost:4200 in web browser_
 
