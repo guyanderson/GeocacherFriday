@@ -11,4 +11,8 @@ export class GeoObjectService {
       this.geoObjects = database.list('geoObjects');
    }
 
+   pushGeoObject(newGeoObject: GeoObject) {
+     this.geoObjects.push(newGeoObject);
+   }
+
 }

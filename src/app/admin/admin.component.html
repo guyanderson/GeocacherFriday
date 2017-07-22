@@ -1,0 +1,24 @@
+<br>
+<h3>Add a new GeoObject to the database.</h3>
+<br>
+<form>
+   <div class="form-group">
+
+      <label>GeoObject Description:</label>
+      <input #newDescription>
+      <br>
+      <br>
+      <label>Latitude:</label>
+      <input #newLat>
+      <br>
+      <br>
+      <label>Longitude:</label>
+      <input #newLong>
+      <br>
+      <br>
+      <label>Address:</label>
+      <input #newAddress>
+
+   </div>
+   <button (click)="AddGeoObject(newDescription.value, newLat.value, newLong.value, newAddress.value); newDescription.value=''; newLat.value=''; newLong.value=''; newAddress.value=''">Add</button>
+</form>

@@ -12,6 +12,7 @@ import { HunterFormComponent } from './hunter-form/hunter-form.component';
 import { LocationComponent } from './location/location.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 
 
 export const firebaseConfig = {
@@ -27,7 +28,8 @@ export const firebaseConfig = {
       WelcomeComponent,
       AboutComponent,
       HunterFormComponent,
-      LocationComponent
+      LocationComponent,
+      AdminComponent
    ],
    imports: [
       BrowserModule,
